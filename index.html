@@ -2,117 +2,75 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3ecde">
 <title>Campanela · Bodegas Jose Navarro</title>
 <meta name="description" content="Campanela. Una historia de familia, tierra y vino a los pies de la Sierra de Gredos.">
 <style>
-:root{--paper:#f2ecdf;--ink:#28251f;--gold:#a88642;--muted:#6f685b}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#d9d1c2;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
-.page{max-width:760px;margin:24px auto;background:var(--paper);min-height:100vh;position:relative;
-box-shadow:0 12px 45px rgba(0,0,0,.12);padding:28px}
-.page:before,.page:after{content:"";position:absolute;pointer-events:none}
-.page:before{inset:12px;border:1px solid var(--gold)}
-.page:after{inset:17px;border:1px solid rgba(168,134,66,.55)}
-main{position:relative;z-index:1}
-.hero{text-align:center;padding:72px 28px 54px}
-.brand{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(58px,13vw,96px);line-height:.9;margin:0 0 20px;font-weight:500}
-.kicker,.eyebrow{letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-size:12px;font-weight:bold}
-.hero h2{font-size:clamp(20px,4vw,29px);font-weight:normal;line-height:1.45;margin:28px auto 10px;max-width:570px}
-.rule{width:115px;height:1px;background:var(--gold);margin:30px auto}
-.mountains{margin:28px auto 10px;max-width:590px}
-.mountains svg{width:100%;height:auto;display:block}
-section{padding:52px 34px;border-top:1px solid rgba(168,134,66,.34)}
-section h2{text-align:center;font-size:32px;font-weight:normal;margin:8px 0 26px}
-section p{font-size:18px;line-height:1.8;margin:0 auto 18px;max-width:590px}
-.lead:first-letter{font-size:55px;float:left;line-height:.8;padding:8px 8px 0 0;color:var(--gold)}
-.quote{font-size:24px;line-height:1.55;text-align:center;font-style:italic;max-width:580px;margin:30px auto;color:#3c372f}
-.names{text-align:center;letter-spacing:.08em;font-size:15px;color:var(--gold);margin-top:28px}
-.photo-slot{max-width:590px;margin:32px auto;border:1px solid rgba(168,134,66,.5);padding:8px}
-.photo-slot div{min-height:180px;display:flex;align-items:center;justify-content:center;text-align:center;
-background:rgba(168,134,66,.055);color:var(--muted);font-style:italic;padding:25px}
-footer{text-align:center;padding:55px 30px 70px;border-top:1px solid rgba(168,134,66,.34)}
-footer .brand{font-size:56px}
-.small{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-@media(max-width:600px){body{background:var(--paper)}.page{margin:0;padding:19px;box-shadow:none}.page:before{inset:8px}.page:after{inset:12px}
-.hero{padding:65px 16px 42px}section{padding:42px 18px}section p{font-size:17px}.photo-slot div{min-height:135px}}
+:root{--paper:#f3ecde;--ink:#29251f;--gold:#a78645;--muted:#756c5d;--line:rgba(167,134,69,.34)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#d8d0c1;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+.page{max-width:780px;margin:24px auto;background:var(--paper);position:relative;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,.13)}
+.page:before,.page:after{content:"";position:absolute;inset:12px;border:1px solid var(--gold);pointer-events:none;z-index:8}.page:after{inset:17px;border-color:rgba(167,134,69,.52)}
+main{position:relative;z-index:1}.hero{text-align:center;padding:84px 44px 62px}.eyebrow{font:700 12px/1.4 Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.brand{font-family:"Brush Script MT","Segoe Script","Snell Roundhand","URW Chancery L",cursive;font-size:clamp(68px,15vw,110px);font-weight:500;line-height:.86;margin:13px 0 28px;letter-spacing:-.04em}
+.hero h2{font-size:clamp(22px,4.5vw,31px);line-height:1.42;font-weight:400;max-width:600px;margin:28px auto}.rule{width:118px;height:1px;background:var(--gold);margin:32px auto}
+.mountains{max-width:610px;margin:34px auto 6px}.mountains svg{width:100%;height:auto;display:block}
+section{padding:58px 42px;border-top:1px solid var(--line)} section h2{text-align:center;font-size:clamp(34px,7vw,48px);line-height:1.06;font-weight:400;margin:9px auto 30px;max-width:620px}
+section p{font-size:18px;line-height:1.82;max-width:610px;margin:0 auto 18px}.lead:first-letter{font-size:58px;float:left;line-height:.75;padding:12px 9px 0 0;color:var(--gold)}
+figure{max-width:630px;margin:34px auto 18px}.frame{padding:7px;border:1px solid rgba(167,134,69,.58);background:#eee5d5}.frame img{width:100%;height:auto;display:block;filter:saturate(.92) contrast(.98)}
+figure.portrait{max-width:500px} figcaption{text-align:center;font:italic 14px/1.5 Georgia,serif;color:var(--muted);margin:10px 16px 0}
+.quote{font-size:clamp(23px,5vw,30px);line-height:1.5;text-align:center;font-style:italic;max-width:610px;margin:34px auto;color:#403a31}.quote:before,.quote:after{color:var(--gold)}
+.photo-break{margin:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}.photo-break img{width:100%;display:block;max-height:560px;object-fit:cover}.photo-break:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 55px rgba(38,31,22,.08);pointer-events:none}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:650px;margin:34px auto}.duo img{width:100%;height:340px;object-fit:cover;display:block}.duo .frame{padding:5px}
+.signature{text-align:center;padding:62px 38px 76px;border-top:1px solid var(--line)}.signature .brand{font-size:65px;margin:14px 0 22px}.small{font:12px/1.5 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:600px){body{background:var(--paper)}.page{margin:0;box-shadow:none}.page:before{inset:7px}.page:after{inset:11px}.hero{padding:74px 25px 52px}section{padding:48px 25px}section p{font-size:17px;line-height:1.76}.duo{grid-template-columns:1fr;gap:16px}.duo img{height:auto}.photo-break img{max-height:430px}.brand{font-size:76px}}
 </style>
 </head>
 <body><div class="page"><main>
 <header class="hero">
   <div class="eyebrow">Bodegas Jose Navarro</div>
   <h1 class="brand">Campanela</h1>
-  <div class="mountains" aria-label="Sierra de Gredos">
-    <svg viewBox="0 0 700 190" role="img">
-      <g fill="none" stroke="#3a3731" stroke-width="2">
-        <path d="M35 157 L102 123 L145 128 L215 58 L258 105 L304 77 L344 108 L399 47 L448 102 L487 76 L535 119 L581 91 L665 157"/>
-        <path d="M62 157 L126 139 L180 145 L218 91 L250 126 L304 99 L348 131 L401 79 L444 126 L488 104 L531 139 L585 118 L642 157" opacity=".55"/>
-        <path d="M203 72 L215 58 L228 77 M386 64 L399 47 L415 70 M476 90 L487 76 L499 94" stroke="#a88642"/>
-      </g>
-    </svg>
-  </div>
-  <h2>Una historia de familia, tierra y vino a los pies de la Sierra de Gredos.</h2>
-  <div class="rule"></div>
-  <div class="kicker">San Esteban del Valle</div>
+  <div class="mountains" aria-label="Sierra de Gredos"><svg viewBox="0 0 700 190" role="img"><g fill="none" stroke="#39362f" stroke-width="2"><path d="M35 157 L102 123 L145 128 L215 58 L258 105 L304 77 L344 108 L399 47 L448 102 L487 76 L535 119 L581 91 L665 157"/><path d="M62 157 L126 139 L180 145 L218 91 L250 126 L304 99 L348 131 L401 79 L444 126 L488 104 L531 139 L585 118 L642 157" opacity=".5"/><path d="M203 72 L215 58 L228 77 M386 64 L399 47 L415 70 M476 90 L487 76 L499 94" stroke="#a78645"/></g></svg></div>
+  <h2>Una historia de familia, tierra y vino a los pies de la Sierra de Gredos.</h2><div class="rule"></div><div class="eyebrow">San Esteban del Valle</div>
 </header>
-
-<section>
-  <div class="eyebrow" style="text-align:center">Los orígenes</div>
-  <h2>Todo empezó en casa</h2>
-  <p class="lead">Antes de que existiera Bodegas Jose Navarro, antes de las etiquetas y antes incluso de que una botella llevara el nombre de Campanela, ya había vino.</p>
-  <p><strong>Leandro Navarro</strong> comenzó a elaborarlo en el garaje de su propia casa, en San Esteban del Valle. Hombre de campo, trabajador, honrado y profundamente ligado a su pueblo, durante años fue también pregonero de San Esteban.</p>
-  <p>A su lado estaba <strong>Visitación García</strong>, aunque para hijos y nietos siempre ha sido, sencillamente, <strong>la abuela Visi</strong>. Compañera de Leandro y corazón de la familia, forma parte inseparable de aquellos años y de esta historia.</p>
-  <p>Aquellos primeros vinos nacieron sin grandes pretensiones: de la tierra, de la familia y de una forma sencilla de hacer las cosas.</p>
-  <div class="photo-slot"><div>Espacio reservado para una fotografía de Leandro y la abuela Visi</div></div>
+<section><div class="eyebrow" style="text-align:center">Los orígenes</div><h2>Todo empezó en casa</h2>
+<p class="lead">Antes de que existiera <strong>Bodegas Jose Navarro</strong>, antes de las etiquetas y antes incluso de que una botella llevara el nombre de Campanela, ya había vino.</p>
+<p><strong>Leandro</strong> comenzó a elaborarlo en el garaje de su propia casa, en San Esteban del Valle. Hombre de campo, trabajador, honrado y profundamente ligado a su pueblo, durante años fue también pregonero de San Esteban.</p>
+<p>A su lado estaba <strong>Visitación García</strong>, aunque para hijos y nietos siempre ha sido, sencillamente, <strong>la abuela Visi</strong>. Compañera de Leandro y corazón de la familia, forma parte inseparable de aquellos años y de esta historia.</p>
+<figure class="portrait"><div class="frame"><img src="assets/leandro-visi.jpg" alt="Leandro y la abuela Visi entre las viñas" loading="lazy"></div><figcaption>Leandro y la abuela Visi. El origen de una historia que continúa entre viñas.</figcaption></figure>
+<p>Aquellos primeros vinos nacieron sin grandes pretensiones. Con sus manos, con paciencia y con los conocimientos que daban el campo, los años y la tradición.</p>
 </section>
-
-<section>
-  <div class="eyebrow" style="text-align:center">La siguiente etapa</div>
-  <h2>Jose y Ruben</h2>
-  <p class="lead">Con los años, aquella tradición encontró continuidad en Jose, hijo de Leandro y Visi, y en su cuñado <strong>Ruben Gomez</strong>.</p>
-  <p>Juntos compartieron trabajo, ilusión y muchas horas de elaboración hasta dar forma a lo que acabaría convirtiéndose en <strong>Bodegas Jose Navarro</strong>. Aunque la bodega lleve el nombre de Jose, su historia también pertenece a Ruben, fundador junto a él y parte fundamental del proyecto desde sus comienzos.</p>
-  <p>Algunas de aquellas primeras elaboraciones fueron reconocidas en San Esteban del Valle, pequeños éxitos que les animaron a seguir aprendiendo y perfeccionando sus vinos sin perder de vista su origen.</p>
-  <div class="photo-slot"><div>Espacio reservado para una fotografía de Jose y Ruben o de los primeros años de elaboración</div></div>
+<section><div class="eyebrow" style="text-align:center">La siguiente etapa</div><h2>Jose y Ruben</h2>
+<p class="lead">Con los años, aquella tradición encontró continuidad en Jose, hijo de Leandro y Visi, y en su cuñado <strong>Ruben Gomez</strong>.</p>
+<p>Juntos compartieron trabajo, ilusión y muchas horas de elaboración hasta dar forma a lo que acabaría convirtiéndose en <strong>Bodegas Jose Navarro</strong>. Aunque la bodega lleve el nombre de Jose, su historia también pertenece a Ruben, fundador junto a él y parte fundamental del proyecto desde sus comienzos.</p>
+<figure><div class="frame"><img src="assets/jose-ruben.jpg" alt="Jose y Ruben con un diploma obtenido en un concurso de vino" loading="lazy"></div><figcaption>Jose y Ruben con uno de los reconocimientos obtenidos por sus vinos.</figcaption></figure>
+<p>Los primeros pasos trajeron también pequeñas grandes alegrías: algunas de sus elaboraciones fueron reconocidas en concursos de vino de San Esteban del Valle. Un impulso para continuar aprendiendo, sin perder la manera de hacer las cosas que habían heredado.</p>
 </section>
-
-<section>
-  <div class="eyebrow" style="text-align:center">El nombre</div>
-  <h2>¿Por qué Campanela?</h2>
-  <p class="lead">Hay nombres que se buscan durante meses. El nuestro llevaba toda una vida esperando.</p>
-  <p>Cuando Jose era joven, en el pueblo comenzaron a conocerle por un mote: <strong>Campanela</strong>.</p>
-  <p>Años después, cuando llegó el momento de poner nombre a este vino, no hizo falta mirar demasiado lejos. Campanela no es un nombre inventado para una etiqueta: es un pequeño pedazo de la juventud de Jose y del pueblo en el que empezó todo.</p>
-  <p class="quote">“Un nombre de siempre para un vino que quiere recordar de dónde viene.”</p>
+<section><div class="eyebrow" style="text-align:center">El nombre</div><h2>¿Por qué Campanela?</h2>
+<p class="lead">Hay nombres que se buscan durante meses. El nuestro llevaba toda una vida esperando.</p>
+<p>Cuando Jose era joven, en el pueblo comenzaron a conocerle por un mote: <strong>«Campanela»</strong>. Años después, cuando llegó el momento de poner nombre a este vino, no hizo falta mirar demasiado lejos.</p>
+<p class="quote">Campanela no es un nombre inventado para una etiqueta. Es un pequeño pedazo de la historia de Jose.</p>
 </section>
-
-<section>
-  <div class="eyebrow" style="text-align:center">El paraje</div>
-  <h2>La Cerrailla</h2>
-  <p class="lead">San Esteban del Valle descansa a los pies de la Sierra de Gredos, entre montaña, pequeñas parcelas y un paisaje que forma parte de nuestra manera de entender el vino.</p>
-  <p>Entre las distintas fincas familiares hay una especialmente importante para nosotros: <strong>La Cerrailla</strong>, situada a cierta altura y hogar de la viña de la que nace Campanela.</p>
-  <div class="photo-slot"><div>Espacio reservado para La Cerrailla, la viña o una panorámica de Gredos</div></div>
+<div class="photo-break"><img src="assets/uva-vendimia.jpg" alt="Racimo de uva recién vendimiado en la viña" loading="lazy"></div>
+<section><div class="eyebrow" style="text-align:center">La tierra</div><h2>La Cerrailla y Gredos</h2>
+<p class="lead">Hoy aquella historia continúa en San Esteban del Valle, a los pies de la Sierra de Gredos.</p>
+<p>Entre las pequeñas fincas de la familia se encuentra <strong>La Cerrailla</strong>, situada a cierta altura y hogar de la viña de la que nace este vino. Aquí buscamos seguir una idea sencilla: <strong>intervenir lo mínimo y respetar lo máximo</strong>.</p>
+<p>Una elaboración inspirada en la tradición de la zona, procurando conservar el carácter de la uva, el sabor y la identidad del lugar del que procede.</p>
 </section>
-
-<section>
-  <div class="eyebrow" style="text-align:center">Nuestra manera de entender el vino</div>
-  <h2>Tradición y mínima intervención</h2>
-  <p class="lead">Queremos acompañar al vino sin disfrazarlo: respetar la uva, la parcela y el carácter de cada elaboración.</p>
-  <p>Nuestra filosofía busca una intervención contenida, inspirada en la forma tradicional de elaborar de la zona y en el respeto por la materia prima. Paciencia, observación y el deseo de conservar en cada botella algo del lugar del que procede.</p>
-  <p class="quote">Porque algunas cosas no necesitan hacerse más complicadas para conservar su verdad.</p>
+<section><div class="eyebrow" style="text-align:center">Junto a Jose</div><h2>Charo, parte esencial del camino</h2>
+<p class="lead">Una historia familiar se construye también con quienes están al lado cada día. <strong>Charo</strong>, mujer de Jose, ha sido y es un pilar fundamental en su vida.</p>
+<p>Su presencia forma parte de Campanela de una manera natural: en la bodega, en la viña y en todos esos momentos que convierten un proyecto en algo verdaderamente familiar.</p>
+<div class="duo"><div class="frame"><img src="assets/jose-charo-bodega.jpg" alt="Jose y Charo en la bodega" loading="lazy"></div><div class="frame"><img src="assets/jose-charo-vina.jpg" alt="Jose y Charo brindando entre las viñas" loading="lazy"></div></div>
 </section>
-
-<section>
-  <div class="eyebrow" style="text-align:center">Una historia que continúa</div>
-  <h2>De generación en generación</h2>
-  <p>Lo que empezó Leandro en el garaje de casa encontró después un nuevo camino con Jose y Ruben. Hoy, la familia sigue alrededor de un proyecto que mira hacia delante sin querer olvidar nunca de dónde viene.</p>
-  <div class="names">LEANDRO · ABUELA VISI · JOSE · RUBEN · LA FAMILIA</div>
-  <p class="quote">De un garaje en San Esteban del Valle a una botella de Campanela.<br>Y, al fondo, siempre, la Sierra de Gredos.</p>
+<section><div class="eyebrow" style="text-align:center">El presente</div><h2>Una familia que continúa</h2>
+<p class="lead">Lo que empezó en un garaje no se quedó allí. Hoy la familia sigue reuniéndose alrededor de la viña, del trabajo y del vino.</p>
+<figure><div class="frame"><img src="assets/familia-trabajando.jpg" alt="La familia trabajando unida en la viña" loading="lazy"></div><figcaption>Trabajo, vendimia y mesa compartida. La viña sigue siendo un lugar de encuentro.</figcaption></figure>
+<p>No se trata solamente de elaborar una botella. Se trata de conservar una forma de entender la tierra y de compartirla entre generaciones.</p>
 </section>
-
-<footer>
-  <h2 class="brand">Campanela</h2>
-  <div class="kicker">Bodegas Jose Navarro</div>
-  <div class="rule"></div>
-  <div class="small">San Esteban del Valle · Sierra de Gredos</div>
-</footer>
+<div class="photo-break"><img src="assets/familia-brindando.jpg" alt="La familia disfrutando y brindando en la viña" loading="lazy"></div>
+<section><div class="eyebrow" style="text-align:center">Nuestra historia</div><h2>De una familia, de una tierra</h2>
+<p class="quote">De Leandro y la abuela Visi. De aquel garaje. De Jose y Ruben. De quienes han estado siempre a su lado. De La Cerrailla. De San Esteban del Valle. Y, al fondo, siempre, la Sierra de Gredos.</p>
+<p>Varias generaciones después, seguimos haciendo vino por la misma razón: porque forma parte de nuestra familia, de nuestra tierra y de nuestra manera de entender la vida.</p>
+</section>
+<footer class="signature"><div class="eyebrow">Bodegas Jose Navarro</div><div class="brand">Campanela</div><div class="rule"></div><div class="small">San Esteban del Valle · Sierra de Gredos</div></footer>
 </main></div></body></html>
