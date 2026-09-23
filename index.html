@@ -10,6 +10,11 @@
 <meta name="description"
 content="Campanela. Una historia de familia, viña y vino en San Esteban del Valle, a los pies de la Sierra de Gredos.">
 
+<!-- Tipografía caligráfica para Campanela -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
 <style>
 :root{
   --papel:#f3ecde;
@@ -57,16 +62,22 @@ body{
   border:10px double rgba(167,130,67,.65);
 }
 
+/* CAMPANELA — inspirado en el lettering de la etiqueta */
 .brand{
   margin:0;
-  font-family:"Brush Script MT","Segoe Script",cursive;
-  font-size:clamp(64px,16vw,115px);
-  line-height:.9;
+  font-family:"Italianno","Snell Roundhand","Brush Script MT",cursive;
+  font-size:clamp(82px,21vw,145px);
+  line-height:.78;
   font-weight:400;
+  letter-spacing:-.025em;
+  color:var(--tinta);
+  text-shadow:
+    .5px .5px 0 rgba(167,130,67,.55),
+    -.35px -.35px 0 rgba(167,130,67,.25);
 }
 
 .bodega{
-  margin-top:18px;
+  margin-top:25px;
   font-size:13px;
   letter-spacing:.28em;
   text-transform:uppercase;
@@ -215,7 +226,7 @@ strong{
 }
 
 .end .brand{
-  font-size:clamp(58px,15vw,95px);
+  font-size:clamp(76px,19vw,125px);
 }
 
 .signature{
